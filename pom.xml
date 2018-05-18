@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>de.dytanic</groupId>
+    <artifactId>cloudnet</artifactId>
+    <packaging>pom</packaging>
+    <version>3.0</version>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.build.targetEncoding>UTF-8</project.build.targetEncoding>
+        <!-- Properties -->
+        <cloudnet.name>STORM</cloudnet.name>
+        <cloudnet.version>3.0</cloudnet.version>
+        <cloudnet.driver.version>1.0</cloudnet.driver.version>
+        <!-- Dependency versions -->
+        <dependency.lombok>1.16.6</dependency.lombok>
+        <dependency.gson>2.8.2</dependency.gson>
+        <dependency.netty>4.1.22.Final</dependency.netty>
+        <dependency.jline>2.14.5</dependency.jline>
+        <dependency.test.junit>4.11</dependency.test.junit>
+        <dependency.h2db>1.4.196</dependency.h2db>
+    </properties>
+
+    <modules>
+        <module>cloudnet-common</module>
+        <module>cloudnet-driver</module>
+        <module>cloudnet-core</module>
+        <module>cloudnet-node</module>
+        <module>cloudnet-daemon</module>
+        <module>cloudnet-modules</module>
+        <module>cloudnet-repository-server</module>
+        <module>cloudnet-bridge</module>
+    </modules>
+
+    <name>CloudNet-Parent</name>
+
+    <developers>
+        <developer>
+            <id>main</id>
+            <name>Dytanic</name>
+            <url>https://dytanic.de</url>
+        </developer>
+    </developers>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${dependency.lombok}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+</project>

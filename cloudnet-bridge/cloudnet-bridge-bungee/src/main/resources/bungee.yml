@@ -1,0 +1,6 @@
+name: CloudNet-Bridge
+version: 3.0.0
+description: A BungeeCord implementation for CloudNet bridge
+website: http://dytanic.de
+
+main: de.dytanic.cloudnet.bridge.bungee.BungeeCloudNetBridgePlugin

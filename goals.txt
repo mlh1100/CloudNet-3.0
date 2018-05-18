@@ -1,0 +1,5 @@
+CloudNet 3.0 Goals
+- Scalability
+- Security
+- Dynamic
+- Performance

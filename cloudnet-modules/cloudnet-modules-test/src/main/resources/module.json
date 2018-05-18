@@ -1,0 +1,12 @@
+{
+  "name": "Test-Module",
+  "version": "1.0-TEST",
+  "author": "Dytanic",
+  "main": "de.dytanic.cloudnet.modules.test.TestModule",
+  "website": "https://dytanic.de",
+  "description": "test module for testing the ModuleAPI",
+  "cluster": false,
+  "properties": {
+    "environment_var": true
+  }
+}

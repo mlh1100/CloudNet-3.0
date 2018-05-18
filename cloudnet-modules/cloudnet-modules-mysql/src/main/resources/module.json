@@ -1,0 +1,31 @@
+{
+  "name": "CloudNetModule-MySQL-DatabaseProvider",
+  "version": "1.0",
+  "author": "Dytanic",
+  "main": "de.dytanic.cloudnet.modules.mysql.MySQLModule",
+  "website": "http://dytanic.de",
+  "description": "A MySQL database provider implementation",
+  "ignoreReload": true,
+  "moduleDependencies": [],
+  "libraries": [
+    {
+      "name": "MySQL-Driver",
+      "url": "http://central.maven.org/maven2/mysql/mysql-connector-java/5.1.46/mysql-connector-java-5.1.46.jar"
+    },
+    {
+      "name": "HikariCP",
+      "url": "http://central.maven.org/maven2/com/zaxxer/HikariCP/2.7.8/HikariCP-2.7.8.jar"
+    },
+    {
+      "name": "SLF4J-API",
+      "url": "http://central.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar"
+    }
+  ],
+  "repository": {
+    "url": "http://crepo.dytanic.de",
+    "requireConnection": false,
+    "autoUpdate": false,
+    "properties": {}
+  },
+  "properties": {}
+}

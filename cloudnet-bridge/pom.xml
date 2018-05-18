@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>cloudnet</artifactId>
+        <groupId>de.dytanic</groupId>
+        <version>3.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <name>CloudNet-Bridge</name>
+    <artifactId>cloudnet-bridge</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>cloudnet-bridge-bukkit</module>
+        <module>cloudnet-bridge-bungee</module>
+        <module>cloudnet-bridge-sponge</module>
+        <module>cloudnet-bridge-core</module>
+    </modules>
+
+    <properties>
+        <bukkit.version>1.8.8-R0.1-SNAPSHOT</bukkit.version>
+        <bungee.version>1.8-SNAPSHOT</bungee.version>
+        <sponge.version>7.0.0</sponge.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>de.dytanic</groupId>
+            <artifactId>cloudnet-driver</artifactId>
+            <version>${project.version}</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+</project>
